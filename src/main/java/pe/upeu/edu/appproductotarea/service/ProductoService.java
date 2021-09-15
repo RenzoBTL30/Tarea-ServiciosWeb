@@ -29,7 +29,7 @@ public class ProductoService implements SProducto{
 	@Override
 	public Producto read(Long id) {
 		// TODO Auto-generated method stub
-		return productorepository.getById(id);
+		return productorepository.findById(id).get();
 	}
 
 	@Override
